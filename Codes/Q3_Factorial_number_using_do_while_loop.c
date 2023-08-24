@@ -5,20 +5,15 @@ int main()
     int a, sum, i = 1;
     printf("Enter the number 1: ");
     scanf("%d", &a);
-    if (a <= 0)
-    {
+    if (a <= 0){
         printf("0 and Negative numbers are not allowed");
-    }
-    else
-    {
+    }else{
         sum = 1;
-        do
-        {
+        do{
             sum *= i;
             i++;
         } while (i <= a);
         printf("%d", sum);
     }
-
     return 0;
 }
